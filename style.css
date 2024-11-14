@@ -92,7 +92,6 @@ nav.active {
 
 .header-content {
   max-width: 600px;
-  animation: zoomOut 1s ease-out /* Animasi dimulai setelah 2 detik */
 }
 
 .header-content h1 {
