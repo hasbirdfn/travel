@@ -205,7 +205,6 @@ nav.active {
   overflow: hidden;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi untuk hover */
-  animation: zoomOut 0.8s ease forwards;
 }
 
 /* Efek hover pada kartu */
@@ -304,7 +303,6 @@ nav.active {
   overflow: hidden;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi untuk hover */
-  animation: zoomOut 0.8s ease forwards;
 }
 
 /* Efek hover pada kartu */
@@ -620,21 +618,7 @@ nav.active {
   }
 }
 
-/* Card zoom-out animation */
-@keyframes zoomOut {
-  0% {
-    transform: scale(0.5); /* Ukuran kecil */
-    opacity: 0; /* Mulai dari transparan */
-  }
-  100% {
-    transform: scale(1); /* Ukuran normal */
-    opacity: 1; /* Tampak sepenuhnya */
-  }
-}
-
-/* Responsiveness */
-
-/* Tablet Layout */
+/* Responsive Layout */
 @media (max-width: 768px) {
   /* Navbar yang berubah menjadi vertikal pada layar kecil */
   .navbar ul {
