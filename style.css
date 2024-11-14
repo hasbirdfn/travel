@@ -80,7 +80,7 @@ nav.active {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url('/image/pantai5.jpg') no-repeat center center;
+  background: url('/image/pantai4.jpg') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   width: 100vw; /* Full width of the viewport horizontal */
@@ -274,7 +274,7 @@ nav.active {
 .card-packet-section {
   padding: 50px;
   text-align: center;
-   background: url('/image/pantai5.jpg') no-repeat center center;
+   background: url('/image/pantai3.jpg') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   height: auto;
