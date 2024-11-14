@@ -83,8 +83,8 @@ nav.active {
   background: url('/image/pantai5.jpg') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
-  width: 100vw; /* Full width of the viewport */
-  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport horizontal */
+  height: 100vh; /* Full height of the viewport vertical */
   color: #ffffff;
   padding: 0;
   margin: 0;
@@ -92,6 +92,7 @@ nav.active {
 
 .header-content {
   max-width: 600px;
+  animation: zoomOut 0.8s ease forwards;
 }
 
 .header-content h1 {
@@ -101,6 +102,7 @@ nav.active {
   color: #ffffff;
   border-radius: 20px;
   padding: 10px;
+  margin: 20px 0; /* Hanya jarak atas dan bawah, tidak mengatur kiri-kanan */
 }
 
 .header-content p {
@@ -136,7 +138,7 @@ nav.active {
 }
 /* Form Pencarian */
 .search-form {
-  display: flex;
+  display: flex; /* agr inpit demgam icon search nyatu */
   justify-content: center;
   margin-top: 20px;
 }
@@ -144,17 +146,19 @@ nav.active {
 .search-input {
   width: 70%;
   padding: 10px;
-  border: none;
+  border: none; /* agr border dihaapus */
   border-radius: 20px 0 0 20px;
-  outline: none;
+  outline: none; /* agr garis outline dihaapus */
   font-size: 16px;
 }
-
+/* button icon search */
 .search-button {
-  padding: 10px 20px;
+  /* 10px untuk atas dan bawah
+  20px untuk kiri dan kanan */
+  padding: 10px 20px; 
   border: none;
   background-color: #FFC947;
-  color: #fff;
+  color: #ffffff;
   border-radius: 0 20px 20px 0;
   cursor: pointer;
   font-size: 16px;
@@ -165,7 +169,8 @@ nav.active {
 }
 
 .search-input::placeholder {
-  color: #aaa;
+  color: #0A1931;
+  opacity : 0.5;
 }
 
 .search-button:hover {
@@ -174,7 +179,6 @@ nav.active {
 
 
 /* Card Section */
-
 .card-section {
   padding: 50px;
   text-align: center;
@@ -193,12 +197,11 @@ nav.active {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  
 }
 
 .card {
   width: 300px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
@@ -207,8 +210,12 @@ nav.active {
 }
 
 /* Efek hover pada kartu */
+/* translateY = ke vertical
+  translateX = ke horizontal
+  (-10px) gerak keatas, (10px) gerak kebawah    
+*/
 .card:hover {
-  transform: translateY(-10px)!important; /* Efek pergerakan */
+  transform: translateY(-10px)!important; /* efek pergerakan ke atas */
   box-shadow: 0px 12px 20px rgba(24, 90, 219, 0.8); /* Efek bayangan biru lebih jelas */
 }
 
@@ -260,6 +267,7 @@ nav.active {
 }
 .card-content .btn:hover {
   background-color: #0A1931;
+  outline:none;
 }
 
 
@@ -267,7 +275,7 @@ nav.active {
 .card-packet-section {
   padding: 50px;
   text-align: center;
-   background: url('/image/pantai5.jpg') no-repeat center center;
+   background: url('/image/pantai.jpg') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   height: auto;
@@ -377,6 +385,7 @@ nav.active {
 .about-content {
   flex: 1;
   padding: 0 20px;
+  animation: zoomOut 0.8s ease forwards;
 }
 
 .about-content h2 {
@@ -411,17 +420,20 @@ nav.active {
   flex-direction: row-reverse;
 }
 
+.why-content {
+  flex: 1;
+  padding: 0 20px;
+  animation: zoomOut 0.8s ease forwards;
+}
+
 .why-image {
   width: 50%;
   max-width: 500px;
   border-radius: 10px;
   object-fit: cover;
+ 
 }
 
-.why-content {
-  flex: 1;
-  padding: 0 20px;
-}
 
 .why-content h2 {
   font-size: 28px;
@@ -454,6 +466,7 @@ nav.active {
   padding: 20px;
   border-radius: 8px;
   max-width: 600px;
+  animation: zoomOut 0.8s ease forwards;
 }
 
 .cta-content h1 {
@@ -489,6 +502,7 @@ nav.active {
   max-width: 1200px; /* Maksimal lebar grid */
   margin-left: auto;
   margin-right: auto; /* Agar terpusat */
+  animation: zoomOut 0.8s ease forwards;
 }
 
 .testimonial-item {
@@ -537,6 +551,7 @@ nav.active {
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
+  animation: zoomOut 0.8s ease forwards;
 }
 
 .footer-column {

@@ -1,3 +1,50 @@
 #0A1931
 #185ADB
 #FFC947
+
+justify-content: center; akan mengatur semua elemen agar berada di tengah secara horizontal dalam container.
+align-items: center; akan mengatur semua elemen agar berada di tengah secara vertikal dalam container
+
+display: flex;
+Dengan display: flex, elemen ini diatur sebagai "flex container" (kontainer fleksibel). Flexbox adalah metode layout yang memudahkan pengaturan posisi, distribusi, dan ukuran elemen anak dalam sebuah container, sehingga lebih responsif dan mudah diatur di berbagai ukuran layar.
+
+align-items: center;
+Fungsi ini mengatur elemen-elemen dalam flex container agar disejajarkan di tengah secara vertikal. Dalam konteks ini, teks atau konten lain yang ada di .header-section akan muncul di tengah-tengah secara vertikal, di dalam area tinggi penuh (height: 100vh).
+
+justify-content: center;
+Pengaturan ini membuat elemen anak di dalam flex container berada di tengah secara horizontal. Dengan kata lain, elemen akan terletak di tengah secara horizontal pada .header-section.
+
+text-align: center;
+CSS ini mengatur teks yang ada di dalam elemen menjadi sejajar di tengah secara horizontal. Ini lebih relevan jika ada teks langsung di dalam .header-section.
+
+background: url('/image/pantai5.jpg') no-repeat center center;
+Fungsi ini mengatur gambar latar belakang untuk elemen .header-section. Opsi no-repeat memastikan gambar tidak diulang, sementara center center membuat gambar tersebut diposisikan di tengah secara horizontal dan vertikal.
+
+background-attachment: fixed;
+Dengan pengaturan fixed, latar belakang akan tetap "tetap" ketika pengguna menggulir halaman. Ini menciptakan efek paralaks di mana konten di atas latar belakang dapat bergerak sementara latar belakang tetap di tempatnya.
+
+background-size: cover;
+Ini akan mengatur gambar latar belakang untuk menutupi seluruh elemen. Dengan cover, gambar akan diperbesar atau diperkecil sesuai kebutuhan agar memenuhi area penuh .header-section tanpa distorsi atau pengulangan.
+
+width: 100vw; dan height: 100vh;
+width: 100vw dan height: 100vh masing-masing membuat elemen mengambil lebar penuh dan tinggi penuh dari viewport (area tampilan jendela browser). Ini berguna untuk membuat elemen latar belakang menutupi seluruh layar pengguna.
+
+color: #ffffff;
+Ini mengatur warna teks menjadi putih agar kontras dengan latar belakang gambar.
+
+padding: 0; dan margin: 0;
+Kedua pengaturan ini menghilangkan jarak tambahan di dalam dan di luar elemen. Ini penting untuk memastikan elemen .header-section benar-benar mengisi layar tanpa ada spasi yang tak diinginkan.
+
+Jika kamu ingin gambar hanya muncul satu kali sebagai latar belakang dan ingin mengatur posisinya (misalnya dengan center center).
+Jika kamu menggunakan background-size: cover; untuk membuat gambar memenuhi elemen, biasanya no-repeat juga digunakan untuk memastikan gambar tidak diulang.
+
+
+lemen Berada dalam Baris yang Sama:
+
+Inline: Secara default, elemen dengan display: inline akan berada dalam satu baris dengan elemen lainnya, dan mereka tidak akan memulai baris baru.
+Inline-block: Dengan inline-block, elemen masih berada dalam satu baris, seperti elemen inline, tetapi kamu bisa mengatur ukuran elemen tersebut (misalnya, padding, width, height), yang tidak bisa dilakukan dengan elemen inline biasa.
+Kemampuan Mengatur Dimensi:
+
+Dengan display: inline-block;, kamu bisa mengatur padding, margin, width, height, dll., pada elemen. Ini memungkinkan kamu untuk memberi ruang pada tombol, mengubah ukuran, dan membuat tampilan yang lebih terstruktur.
+
+
