@@ -595,30 +595,22 @@ nav.active {
   font-size: 14px;
   color: #aaa;
 }
-/* Animation */
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
+
+/* Card zoom-out animation */
+@keyframes zoomOut {
+  0% {
+    transform: scale(0.5); /* Ukuran kecil */
+    opacity: 0; /* Mulai dari transparan */
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  100% {
+    transform: scale(1); /* Ukuran normal */
+    opacity: 1; /* Tampak sepenuhnya */
   }
 }
 
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+/* Responsiveness */
 
-/* Responsive Layout */
+/* Tablet Layout */
 @media (max-width: 768px) {
   /* Navbar yang berubah menjadi vertikal pada layar kecil */
   .navbar ul {
