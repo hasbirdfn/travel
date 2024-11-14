@@ -92,7 +92,6 @@ nav.active {
 
 .header-content {
   max-width: 600px;
-  animation: zoomOut 0.8s ease forwards;
 }
 
 .header-content h1 {
@@ -236,6 +235,7 @@ nav.active {
   height: 200px; /* Tentukan tinggi gambar */
   object-fit: cover; /* Gambar mengisi ruang tanpa merusak proporsi */
   transition: transform 0.3s ease;
+
 }
 
 .card-content {
@@ -275,7 +275,7 @@ nav.active {
 .card-packet-section {
   padding: 50px;
   text-align: center;
-   background: url('/image/pantai.jpg') no-repeat center center;
+   background: url('/image/pantai5.jpg') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   height: auto;
@@ -385,7 +385,6 @@ nav.active {
 .about-content {
   flex: 1;
   padding: 0 20px;
-  animation: zoomOut 0.8s ease forwards;
 }
 
 .about-content h2 {
@@ -420,20 +419,17 @@ nav.active {
   flex-direction: row-reverse;
 }
 
-.why-content {
-  flex: 1;
-  padding: 0 20px;
-  animation: zoomOut 0.8s ease forwards;
-}
-
 .why-image {
   width: 50%;
   max-width: 500px;
   border-radius: 10px;
   object-fit: cover;
- 
 }
 
+.why-content {
+  flex: 1;
+  padding: 0 20px;
+}
 
 .why-content h2 {
   font-size: 28px;
@@ -466,7 +462,6 @@ nav.active {
   padding: 20px;
   border-radius: 8px;
   max-width: 600px;
-  animation: zoomOut 0.8s ease forwards;
 }
 
 .cta-content h1 {
@@ -502,7 +497,6 @@ nav.active {
   max-width: 1200px; /* Maksimal lebar grid */
   margin-left: auto;
   margin-right: auto; /* Agar terpusat */
-  animation: zoomOut 0.8s ease forwards;
 }
 
 .testimonial-item {
@@ -551,7 +545,6 @@ nav.active {
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
-  animation: zoomOut 0.8s ease forwards;
 }
 
 .footer-column {
