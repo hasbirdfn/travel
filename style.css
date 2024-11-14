@@ -205,15 +205,12 @@ nav.active {
   overflow: hidden;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi untuk hover */
+  animation: zomOut 0.8s ease forwards;
 }
 
 /* Efek hover pada kartu */
-/* translateY = ke vertical
-  translateX = ke horizontal
-  (-10px) gerak keatas, (10px) gerak kebawah    
-*/
 .card:hover {
-  transform: translateY(-10px)!important; /* efek pergerakan ke atas */
+  transform: translateY(-10px)!important; /* Efek pergerakan */
   box-shadow: 0px 12px 20px rgba(24, 90, 219, 0.8); /* Efek bayangan biru lebih jelas */
 }
 
@@ -234,7 +231,6 @@ nav.active {
   height: 200px; /* Tentukan tinggi gambar */
   object-fit: cover; /* Gambar mengisi ruang tanpa merusak proporsi */
   transition: transform 0.3s ease;
-
 }
 
 .card-content {
@@ -266,7 +262,6 @@ nav.active {
 }
 .card-content .btn:hover {
   background-color: #0A1931;
-  outline:none;
 }
 
 
@@ -274,7 +269,7 @@ nav.active {
 .card-packet-section {
   padding: 50px;
   text-align: center;
-   background: url('/image/pantai3.jpg') no-repeat center center;
+   background: url('/image/pantai5.jpg') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   height: auto;
@@ -303,6 +298,7 @@ nav.active {
   overflow: hidden;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi untuk hover */
+  animation: zoomOut 0.8s ease forwards;
 }
 
 /* Efek hover pada kartu */
@@ -596,17 +592,7 @@ nav.active {
   color: #aaa;
 }
 
-/* Card zoom-out animation */
-@keyframes zoomOut {
-  0% {
-    transform: scale(0.5); /* Ukuran kecil */
-    opacity: 0; /* Mulai dari transparan */
-  }
-  100% {
-    transform: scale(1); /* Ukuran normal */
-    opacity: 1; /* Tampak sepenuhnya */
-  }
-}
+
 
 /* Responsiveness */
 
@@ -655,16 +641,11 @@ nav.active {
     max-width: 500px;
     border-radius: 10px;
     object-fit: cover;
-    opacity: 0;
-    animation: slideInLeft 0.8s ease forwards;
   }
-
   .about-content {
     flex: 1;
     padding: 0 20px;
-    opacity: 0;
-    animation: slideInRight 0.8s ease forwards;
-    animation-delay: 0.2s;
+   
   }
   .about-content h2 {
     font-size: 24px;
@@ -681,16 +662,11 @@ nav.active {
     max-width: 500px;
     border-radius: 10px;
     object-fit: cover;
-    opacity: 0;
-    animation: slideInLeft 0.8s ease forwards;
+   
   }
-
   .why-content {
     flex: 1;
     padding: 0 20px;
-    opacity: 0;
-    animation: slideInRight 0.8s ease forwards;
-    animation-delay: 0.2s;
   }
   .why-content h2 {
     font-size: 24px;
