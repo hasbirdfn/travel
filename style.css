@@ -132,7 +132,7 @@ nav.active {
 }
 
 .header-buttons .btn-secondary:hover {
-  transform: translateY(-10px)!important; /* Efek pergerakan */
+  transform: translateY(10px)!important; /* Efek pergerakan */
   box-shadow: 0px 12px 20px rgba(255, 255, 255, 0.8); /* Bayangan putih */
 } 
 .btn-primary {
@@ -372,10 +372,9 @@ nav.active {
 
 .about-container {
   max-width: 1200px;
-  display: flex;
-  align-items: center;
+  display:flex;
   gap: 30px;
-  flex-direction: row; /* diatur secara horizontal */ 
+  flex-direction :row;
 }
 
 .about-image {
