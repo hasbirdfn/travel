@@ -124,8 +124,17 @@ nav.active {
   border-radius: 5px;
   font-weight: bold;
   margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+.header-buttons .btn-primary:hover {
+  transform: translateY(-10px)!important; /* Efek pergerakan */
+  box-shadow: 0px 12px 20px rgba(24, 90, 219, 0.8); /* Bayangan putih */
 }
 
+.header-buttons .btn-secondary:hover {
+  transform: translateY(-10px)!important; /* Efek pergerakan */
+  box-shadow: 0px 12px 20px rgba(255, 255, 255, 0.8); /* Bayangan putih */
+} 
 .btn-primary {
   background-color: #185ADB;
   color: #ffffff;
@@ -366,7 +375,7 @@ nav.active {
   display: flex;
   align-items: center;
   gap: 30px;
-  flex-direction: row;
+  flex-direction: row; /* diatur secara horizontal */ 
 }
 
 .about-image {
@@ -374,10 +383,16 @@ nav.active {
   max-width: 500px;
   border-radius: 10px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: translateY(-10px)!important; /* Efek pergerakan */
+  box-shadow: 0px 12px 20px rgba(255, 255, 255, 0.8); /* Bayangan putih */
 }
 
 .about-content {
-  flex: 1;
+  flex: 1;  /* Nilai 1 berarti elemen ini akan "mengambil ruang yang tersisa" setelah elemen lain di dalam kontainer flex */
   padding: 0 20px;
 }
 
@@ -418,6 +433,11 @@ nav.active {
   max-width: 500px;
   border-radius: 10px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.why-image:hover {
+  transform: translateY(-10px)!important; /* Efek pergerakan */
+  box-shadow: 0px 12px 20px rgba(24, 90, 219, 0.8); /* Efek bayangan biru lebih jelas */
 }
 
 .why-content {
@@ -456,6 +476,12 @@ nav.active {
   padding: 20px;
   border-radius: 8px;
   max-width: 600px;
+  transition : transform 0.3s ease;
+}
+
+.cta-content:hover {
+  transform: translateY(-10px)!important;
+  box-shadow: 0px 12px 20px rgba(24, 90, 219, 0.8); /* Efek bayangan biru lebih jelas */
 }
 
 .cta-content h1 {
@@ -502,6 +528,11 @@ nav.active {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+.testimonial-item:hover {
+  transform: translateY(-10px)!important;
+  box-shadow: 0px 12px 20px rgba(24, 90, 219, 0.8); 
 }
 
 .testimonial-image img {
@@ -536,7 +567,7 @@ nav.active {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1200px;
   margin: auto;
 }
@@ -544,6 +575,7 @@ nav.active {
 .footer-column {
   flex: 1;
   min-width: 200px;
+ 
 }
 
 .footer-column h4 {
@@ -555,6 +587,7 @@ nav.active {
 .footer-column p, .footer-column ul, .footer-column a {
   font-size: 14px;
   line-height: 1.6;
+  text-decoration: none;
 }
 
 .footer-column a {
